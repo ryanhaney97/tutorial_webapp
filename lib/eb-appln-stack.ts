@@ -69,7 +69,7 @@ const optionSettingProperties: elasticbeanstalk.CfnEnvironment.OptionSettingProp
     {
         namespace: 'aws:autoscaling:asg',
         optionName: 'MinSize',
-        value: props?.maxSize ?? '1',
+        value: props?.minSize ?? '1',
     },
     {
         namespace: 'aws:autoscaling:asg',
