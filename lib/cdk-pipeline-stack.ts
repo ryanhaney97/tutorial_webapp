@@ -22,7 +22,7 @@ export class CdkPipelineStack extends Stack {
                     authentication: cdk.SecretValue.secretsManager('github-oauth-token'), }),
          
          // Install dependencies, build and run cdk synth
-         installCommands: ['npm i -g npm@latest'],
+         installCommands: ['npm i -g npm@9.8.1'],
          commands: [
            'npm ci',
            'npm run build',
